@@ -16,6 +16,8 @@
     font-weight: 700;
   }
 
+  /* GENERALS*/
+
 body{
     background: linear-gradient(135deg, #75d2f9 0%, #279ca9 100%);
     margin: 0;
@@ -28,7 +30,7 @@ body{
 .wrapper{
     padding: 0 16px;
 }
-
+        /* SECTION NAVBAR */
 .navbar{
     display: flex;
     align-items: center;
@@ -65,6 +67,76 @@ body{
     cursor: pointer;
 }
 
+
+       /* SECTION MAIN */
+.main {
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-img img{
+    width: 100%;
+}
+
+.main-description h2{
+    font-size: 48px;
+    margin: 0px;
+    padding-bottom: 6px;
+}
+.main-description h1{
+    font-size: 59px;
+    margin: 0px;
+    margin-bottom: 16px;
+}
+
+.main-icons{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.main-icons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #0F0A0A;
+    border-radius: 4px;
+    width: 44px;
+    height: 44px;
+    text-decoration: none;
+    background-color: #42E2B8;
+}
+
+.main-icons a > img{
+    width: 18px;
+    height: 18px;
+}
+
+
+        /* SECTION PROJECTS*/
+.projects-main{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.projects-main p{
+    margin: 0;
+    line-height: 39px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.projects-main h3{
+    font-size: 24px;
+    line-height: 39px;
+}
+
+
+
+
+        /* >>>>>> MEDIA QUERIES <<<<<<< */
 
 @media (min-width: 640px){
 .wrapper{
