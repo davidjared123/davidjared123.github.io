@@ -55,6 +55,8 @@ body{
     background-color:#42E2B8;
     font-size: 14px;
     transition-duration: 0.4s;
+    color: #0F0A0A;
+    text-decoration: none;
 }
 
 .download::after{
@@ -241,10 +243,11 @@ content: '';
 }
 
 .formulario input::placeholder{
-    padding: 5px .8em;
+    padding: 5px 0;
 }
 .formulario input{
-    width: 100%;
+    width: calc(100% - 1.5em);
+    padding-left: 1.5em;
     background-color: white;
     border: 1px solid #858C94;
     border-radius: 8px;
@@ -257,7 +260,10 @@ content: '';
     border: 1px solid #858C94;
     border-radius: 8px;
 }
-
+.form--error::after{
+    content: "*No has ingresado un email válido";
+    color: rgb(204, 52, 52);
+}
 .footer .copyright > .main-icons{
     margin: 0;
     /* background-color: red; */
@@ -369,7 +375,7 @@ content: '';
         grid-row: 1;
     }
     .link{
-        grid-column: 1 / 2;
+        grid-column: 1 / 4;
         grid-row: 1;
     }
     .Hablemos{
